@@ -1,24 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grooming Xpress</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Grooming Xpress</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#000;
+color:#fff;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.8);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+color:#fff;
+}
+
+.logo span{
+color:#d40000;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-size:16px;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7));
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+color:#ddd;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:16px 40px;
+background:#d40000;
+border-radius:50px;
+color:white;
+text-decoration:none;
+font-size:20px;
+transition:.3s;
+}
+
+.btn:hover{
+background:white;
+color:black;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
+
 </head>
-<body style="background:#000;color:#fff;font-family:Arial,sans-serif;text-align:center;padding-top:80px;">
+
+<body>
+
+<header>
+
+<div class="logo">
+GX<span>.</span>
+</div>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#">Services</a>
+<a href="#">Gallery</a>
+<a href="#">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
 
 <h1>GROOMING XPRESS</h1>
 
-<p>Luxury Salon | Tattoo | Beauty Studio</p>
+<p>Premium Salon • Tattoo • Beauty Studio</p>
 
-<button style="padding:15px 35px;
-background:#c40000;
-color:white;
-border:none;
-border-radius:40px;
-font-size:18px;">
+<a href="#" class="btn">
 Book Appointment
-</button>
+</a>
+
+</div>
+
+</section>
 
 </body>
+
 </html>
