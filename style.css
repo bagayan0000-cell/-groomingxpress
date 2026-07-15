@@ -48,3 +48,42 @@ header{
     background:#fff;
     color:#000;
 }
+.services{
+padding:80px 8%;
+background:#111;
+text-align:center;
+}
+
+.services h2{
+font-size:36px;
+margin-bottom:40px;
+}
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:#1b1b1b;
+padding:30px;
+border-radius:18px;
+transition:.3s;
+border:1px solid #333;
+}
+
+.card:hover{
+transform:translateY(-8px);
+border-color:#c40000;
+}
+
+.card h3{
+margin-bottom:15px;
+color:#fff;
+}
+
+.card p{
+color:#bbb;
+line-height:1.6;
+}
