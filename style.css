@@ -161,3 +161,40 @@ background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
 }
+.about-image img{
+    width:100%;
+    max-width:500px;
+    height:auto;
+    border-radius:20px;
+    object-fit:cover;
+    display:block;
+    margin:auto;
+}
+
+.about-content{
+    flex:1;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+.about{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+}
+
+.about-image{
+    width:100%;
+}
+
+.about-content h2{
+    font-size:36px;
+}
+
+.about-content p{
+    font-size:17px;
+    line-height:1.8;
+}
+
+}
