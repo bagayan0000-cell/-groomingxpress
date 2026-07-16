@@ -351,3 +351,8 @@ background-repeat:no-repeat;
     transform: scale(1.1);
     background: #1ebe5d;
 }
+.whatsapp-btn img{
+    width: 35px;
+    height: 35px;
+    display: block;
+}
