@@ -484,3 +484,20 @@ background-repeat:no-repeat;
 .review-btn:hover{
     background:#b30000;
 }
+.review-btn,
+.review-btn:link,
+.review-btn:visited{
+    display:inline-block;
+    background:#d40000;
+    color:#fff !important;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:50px;
+    font-weight:700;
+}
+
+.review-btn:hover,
+.review-btn:active{
+    background:#b30000;
+    color:#fff !important;
+}
