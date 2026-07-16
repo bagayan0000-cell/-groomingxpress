@@ -470,20 +470,7 @@ background-repeat:no-repeat;
     line-height:1.6;
 }
 
-.review-btn{
-    display:inline-block;
-    padding:14px 28px;
-    background:#d40000;
-    color:#fff;
-    text-decoration:none;
-    border-radius:50px;
-    font-weight:bold;
-    transition:.3s;
-}
 
-.review-btn:hover{
-    background:#b30000;
-}
 .review-btn,
 .review-btn:link,
 .review-btn:visited{
