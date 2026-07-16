@@ -541,3 +541,37 @@ font-size:17px;
 color:#ff2b2b;
 font-weight:bold;
 }
+.counter-section{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+    padding:80px 20px;
+    background:#111;
+    text-align:center;
+}
+
+.counter-box{
+    background:#1a1a1a;
+    border:1px solid #2b2b2b;
+    border-radius:20px;
+    padding:35px 20px;
+    transition:.3s;
+}
+
+.counter-box:hover{
+    transform:translateY(-8px);
+    border-color:#d40000;
+    box-shadow:0 0 20px rgba(212,0,0,.35);
+}
+
+.counter{
+    font-size:46px;
+    color:#ff2b2b;
+    font-weight:bold;
+}
+
+.counter-box p{
+    color:#ccc;
+    margin-top:12px;
+    font-size:18px;
+}
