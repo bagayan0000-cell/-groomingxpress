@@ -52,13 +52,66 @@ color:#d40000;
 }
 
 .hero{
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:120px 20px 80px;
-background:linear-gradient(to bottom,#111,#000);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:120px 20px 80px;
+    background:linear-gradient(to bottom,#111,#000);
+
+    position:relative;
+    overflow:hidden;
+}.hero::before{
+    content:"";
+    position:absolute;
+    width:700px;
+    height:700px;
+    background:radial-gradient(circle,
+    rgba(255,0,0,.30) 0%,
+    rgba(255,0,0,.12) 45%,
+    transparent 70%);
+    top:-250px;
+    left:-200px;
+    filter:blur(60px);
+    animation:glow1 10s ease-in-out infinite alternate;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:radial-gradient(circle,
+    rgba(255,0,0,.20),
+    transparent 70%);
+    bottom:-180px;
+    right:-150px;
+    filter:blur(50px);
+    animation:glow2 8s ease-in-out infinite alternate;
+}
+
+.hero>*{
+    position:relative;
+    z-index:2;
+}
+
+@keyframes glow1{
+    from{
+        transform:translate(0,0) scale(1);
+    }
+    to{
+        transform:translate(120px,80px) scale(1.2);
+    }
+}
+
+@keyframes glow2{
+    from{
+        transform:translate(0,0) scale(1);
+    }
+    to{
+        transform:translate(-120px,-60px) scale(1.15);
+    }
 }
 
 .hero h1{
