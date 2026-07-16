@@ -294,5 +294,35 @@ GX<span>.</span>
     </div>
 
 </section>
+<script>
+const counters=document.querySelectorAll('.counter');
+
+counters.forEach(counter=>{
+    const target=parseFloat(counter.dataset.target);
+    let count=0;
+
+    const update=()=>{
+        if(target===4.9){
+            count+=0.1;
+            if(count>=target){
+                counter.innerText="4.9★";
+                return;
+            }
+            counter.innerText=count.toFixed(1);
+        }else{
+            const speed=Math.ceil(target/100);
+            count+=speed;
+            if(count>=target){
+                counter.innerText=target.toLocaleString()+"+";
+                return;
+            }
+            counter.innerText=count.toLocaleString();
+        }
+        requestAnimationFrame(update);
+    };
+
+    update();
+});
+</script>
 </body>
 </html>
