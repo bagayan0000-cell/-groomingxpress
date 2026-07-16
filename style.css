@@ -308,3 +308,23 @@ background-repeat:no-repeat;
 .service-card{
     overflow:hidden;
 }
+.call-btn{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #e30613;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 22px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    box-shadow: 0 8px 20px rgba(227,6,19,.4);
+    z-index: 9999;
+    transition: .3s;
+}
+
+.call-btn:hover{
+    background:#b30000;
+    transform: translateY(-3px);
+}
