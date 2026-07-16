@@ -565,15 +565,15 @@ font-weight:bold;
 }
 
 .counter{
-    font-size:36px;
+    font-size:34px;
     color:#ff2b2b;
     font-weight:bold;
 }
 
 .counter-box p{
     color:#ccc;
-    margin-top:10px;
-    font-size:18px;
+    margin-top:6px;
+    font-size:15px;
 }
 .counter-section{
     background:#000;
@@ -583,8 +583,8 @@ font-weight:bold;
 .counter-grid{
     display:grid;
     grid-template-columns:repeat(2,1fr);
-    gap:12px;
-    width:90%;
+    gap:10px;
+    width:85%;
     margin:auto;
 }
 .counter-card{
