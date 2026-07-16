@@ -62,7 +62,8 @@ color:#d40000;
 
     position:relative;
     overflow:hidden;
-}.hero::before{
+}
+.hero::before{
     content:"";
     position:absolute;
     width:700px;
