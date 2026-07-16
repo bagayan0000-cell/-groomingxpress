@@ -82,12 +82,19 @@ text-decoration:none;
 border-radius:50px;
 font-size:20px;
 transition:.3s;
-}
+-webkit-tap-highlight-color: transparent;
+-webkit-appearance: none;}
 
 .btn:hover{
-background:#fff;
-color:#000;
+    background:#b30000;
+    color:#fff;
 }
+.btn:visited,
+.btn:active{
+    background:#d40000;
+    color:#fff;
+}
+
 
 .services{
 padding:100px 8%;
