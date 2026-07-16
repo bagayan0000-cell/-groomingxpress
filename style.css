@@ -583,10 +583,9 @@ font-weight:bold;
 .counter-grid{
     display:grid;
     grid-template-columns:repeat(2,1fr);
-    gap:15px;
-    max-width:750px;
+    gap:12px;
+    width:90%;
     margin:auto;
-    padding:0 15px;
 }
 .counter-card{
     background:#1a1a1a;
