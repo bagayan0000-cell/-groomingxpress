@@ -730,13 +730,15 @@ background:conic-gradient(
     top:50%;
     transform-origin:0 0;
     display:flex;
-    justify-content:center;
-    align-items:flex-start;
-    padding-top:15px;
-    color:#fff;
-    font-size:12px;
+    justify-content:flex-start;
+align-items:center;
+padding-left:70px;
+padding-top:4px;
+font-size:9px;
+text-align:left;
     font-weight:bold;
     text-shadow:0 0 4px #000;
+    white-space: nowrap;
 }
 
 .slice:nth-child(1){transform:rotate(0deg) skewY(-60deg);}
