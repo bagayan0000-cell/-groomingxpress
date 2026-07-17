@@ -56,7 +56,7 @@ ${coupon}
 I'd like to claim my offer.`;
 
 claimBtn.href =
-`https://wa.me/91YOURNUMBER?text=${encodeURIComponent(message)}`;
+`https://wa.me/91+81003 45294?text=${encodeURIComponent(message)}`;
 
 },5000);
 
