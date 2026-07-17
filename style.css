@@ -185,6 +185,40 @@ color:#fff;
     background-position:center;
     background-repeat:no-repeat;
 }
+<section class="offers" id="offers">
+    <h2>🔥 Limited Time Offers</h2>
+
+    <div class="offer-grid">
+
+        <div class="offer-card">
+            <span class="tag">BEST SELLER</span>
+            <h3>Hair Smoothening</h3>
+            <p class="price">₹1999</p>
+            <p>✓ Free Hair Cut</p>
+            <p>✓ Hair Wash</p>
+            <p>✓ Head Massage</p>
+        </div>
+
+        <div class="offer-card">
+            <span class="tag">POPULAR</span>
+            <h3>Keratin Treatment</h3>
+            <p class="price">₹1999</p>
+            <p>✓ Hair Cut</p>
+            <p>✓ Hair Wash</p>
+            <p>✓ Free Consultation</p>
+        </div>
+
+        <div class="offer-card">
+            <span class="tag">PREMIUM</span>
+            <h3>Hydra Facial</h3>
+            <p class="price">₹1999</p>
+            <p>✓ Glow Treatment</p>
+            <p>✓ Face Massage</p>
+            <p>✓ Skin Analysis</p>
+        </div>
+
+    </div>
+</section>
 .about-image img{
     width:100%;
     max-width:650px;
