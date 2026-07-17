@@ -53,14 +53,14 @@ I'd like to claim my offer.`;
     popup.style.display = "flex";
 
     claimBtn.onclick = function () {
-        window.open(
+        window.open(`)
             "https://wa.me/918100345294?text=" +
             encodeURIComponent(message),
             "_blank"
         );
     };
 
-}, 5000);
+
 
 },5000);
 
