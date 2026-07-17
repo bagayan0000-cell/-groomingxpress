@@ -38,6 +38,25 @@ resultText.innerHTML = "🎉 You Won";
 couponCode.innerHTML = "Coupon: GX" + Math.floor(1000 + Math.random() * 9000);
 
 popup.style.display = "flex";
+const claimBtn = document.getElementById("claimBtn");
+
+const coupon = "GX" + Math.floor(1000 + Math.random() * 9000);
+couponCode.innerHTML = "Coupon: " + coupon;
+
+const message =
+`Hello Grooming Xpress 👋
+
+I won:
+
+${offers[random]}
+
+Coupon Code:
+${coupon}
+
+I'd like to claim my offer.`;
+
+claimBtn.href =
+`https://wa.me/91YOURNUMBER?text=${encodeURIComponent(message)}`;
 
 },5000);
 
