@@ -174,18 +174,16 @@ color:#fff;
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:120px 20px 80px;
+    position:relative;
+    overflow:hidden;
 
     background-image:
-        linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.75)),
+        linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
         url("./hero.png");
 
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
-    background-color: #111;
-    position:relative;
-    overflow:hidden;
 }
 .about-image img{
     width:100%;
