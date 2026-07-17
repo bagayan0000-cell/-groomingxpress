@@ -782,6 +782,7 @@ text-align:left;
     border-radius:50px;
     cursor:pointer;
     transition:.3s;
+    margin-top:50px;
 }
 
 .spin-btn:hover{
