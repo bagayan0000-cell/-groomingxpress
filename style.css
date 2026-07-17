@@ -828,6 +828,7 @@ text-align:left;
 }
 
 }
+    .slice span{
     display:block;
     transform:skewY(60deg) rotate(15deg);
     transform-origin:left center;
