@@ -1,9 +1,12 @@
 const wheel = document.getElementById("wheel");
 const spinBtn = document.getElementById("spinBtn");
-const resultBox = document.getElementById("result");
-const prizeText = document.getElementById("prize");
+const popup = document.getElementById("popup");
+const prize = document.getElementById("prize");
+const resultText = document.getElementById("resultText");
+const couponCode = document.getElementById("couponCode");
+const closePopup = document.getElementById("closePopup");
 
-const prizes = [
+const offers = [
 "✂️ Free Hair Cut",
 "🎁 10% OFF",
 "🌸 Lotus Facial",
@@ -18,34 +21,30 @@ const prizes = [
 "💅 Nail Extension ₹799"
 ];
 
-let spinning = false;
+spinBtn.addEventListener("click", () => {
 
-spinBtn.addEventListener("click", function(){
+const random = Math.floor(Math.random() * offers.length);
 
-if(spinning) return;
+const segment = 360 / offers.length;
+const rotate = 3600 + (random * segment);
 
-if(localStorage.getItem("gxSpinDone")){
-alert("You have already used your Spin & Win offer.");
-return;
-}
+wheel.style.transition = "transform 5s ease-out";
+wheel.style.transform = `rotate(${rotate}deg)`;
 
-spinning = true;
+setTimeout(() => {
 
-const random = Math.floor(Math.random() * prizes.length);
+prize.innerHTML = offers[random];
+resultText.innerHTML = "🎉 You Won";
+couponCode.innerHTML = "Coupon: GX" + Math.floor(1000 + Math.random() * 9000);
 
-const degree = 360 * 6 + random * (360 / prizes.length);
-
-wheel.style.transform = `rotate(${degree}deg)`;
-
-setTimeout(function(){
-
-prizeText.innerHTML = prizes[random];
-resultBox.style.display = "block";
-
-localStorage.setItem("gxSpinDone","yes");
-
-spinning = false;
+popup.style.display = "flex";
 
 },5000);
+
+});
+
+closePopup.addEventListener("click", () => {
+
+popup.style.display = "none";
 
 });
