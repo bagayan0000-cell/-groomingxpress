@@ -185,40 +185,61 @@ color:#fff;
     background-position:center;
     background-repeat:no-repeat;
 }
-<section class="offers" id="offers">
-    <h2>🔥 Limited Time Offers</h2>
+.offers{
+    background:#0a0a0a;
+    padding:80px 20px;
+    text-align:center;
+}
 
-    <div class="offer-grid">
+.offers h2{
+    color:#fff;
+    font-size:42px;
+    margin-bottom:50px;
+}
 
-        <div class="offer-card">
-            <span class="tag">BEST SELLER</span>
-            <h3>Hair Smoothening</h3>
-            <p class="price">₹1999</p>
-            <p>✓ Free Hair Cut</p>
-            <p>✓ Hair Wash</p>
-            <p>✓ Head Massage</p>
-        </div>
+.offer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
 
-        <div class="offer-card">
-            <span class="tag">POPULAR</span>
-            <h3>Keratin Treatment</h3>
-            <p class="price">₹1999</p>
-            <p>✓ Hair Cut</p>
-            <p>✓ Hair Wash</p>
-            <p>✓ Free Consultation</p>
-        </div>
+.offer-card{
+    background:#111;
+    border:1px solid #222;
+    border-radius:20px;
+    padding:30px;
+    transition:.3s;
+}
 
-        <div class="offer-card">
-            <span class="tag">PREMIUM</span>
-            <h3>Hydra Facial</h3>
-            <p class="price">₹1999</p>
-            <p>✓ Glow Treatment</p>
-            <p>✓ Face Massage</p>
-            <p>✓ Skin Analysis</p>
-        </div>
+.offer-card:hover{
+    transform:translateY(-8px);
+    border-color:#ff0000;
+}
 
-    </div>
-</section>
+.tag{
+    background:#ff0000;
+    color:#fff;
+    padding:6px 15px;
+    border-radius:20px;
+    font-size:12px;
+}
+
+.offer-card h3{
+    color:#fff;
+    margin:20px 0 10px;
+}
+
+.price{
+    color:#ff0000;
+    font-size:40px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.offer-card p{
+    color:#ccc;
+    margin:8px 0;
+}
 .about-image img{
     width:100%;
     max-width:650px;
