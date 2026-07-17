@@ -37,7 +37,7 @@ prize.innerHTML = offers[random];
 resultText.innerHTML = "🎉 You Won";
 couponCode.innerHTML = "Coupon: GX" + Math.floor(1000 + Math.random() * 9000);
 
-popup.style.display = "none";
+popup.style.display = "flex";
 
 },5000);
 
