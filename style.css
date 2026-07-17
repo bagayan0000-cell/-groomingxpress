@@ -65,10 +65,7 @@ color:#d40000;
 }
 
 
-@keyframes glow1{
-    from{
-        transform:translate(0,0) scale(1);
-    }
+
     to{
         transform:translate(120px,80px) scale(1.2);
     }
