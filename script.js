@@ -33,15 +33,13 @@ wheel.style.transform = `rotate(${rotate}deg)`;
 
 setTimeout(() => {
 
-prize.innerHTML = offers[random];
-resultText.innerHTML = "🎉 You Won";
+    prize.innerHTML = offers[random];
+    resultText.innerHTML = "🎉 You Won";
 
-const coupon = "GX" + Math.floor(1000 + Math.random() * 9000);
+    const coupon = "GX" + Math.floor(1000 + Math.random() * 9000);
+    couponCode.innerHTML = "Coupon: " + coupon;
 
-couponCode.innerHTML = "Coupon: " + coupon;
-
-const message =
-`Hello Grooming Xpress 👋
+    const message = `Hello Grooming Xpress 👋
 
 I won:
 
@@ -52,33 +50,17 @@ ${coupon}
 
 I'd like to claim my offer.`;
 
-claimBtn.onclick = function () {
-    window.open(
-        "https://wa.me/+91 81003 45294?text=" + encodeURIComponent(message),
-        "_blank"
-    );
-};
+    popup.style.display = "flex";
 
-popup.style.display = "flex";
-const claimBtn = document.getElementById("claimBtn");
+    claimBtn.onclick = function () {
+        window.open(
+            "https://wa.me/918100345294?text=" +
+            encodeURIComponent(message),
+            "_blank"
+        );
+    };
 
-const coupon = "GX" + Math.floor(1000 + Math.random() * 9000);
-couponCode.innerHTML = "Coupon: " + coupon;
-
-const message =
-`Hello Grooming Xpress 👋
-
-I won:
-
-${offers[random]}
-
-Coupon Code:
-${coupon}
-
-I'd like to claim my offer.`;
-
-claimBtn.href =
-`https://wa.me/91+81003 45294?text=${encodeURIComponent(message)}`;
+}, 5000);
 
 },5000);
 
